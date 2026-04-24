@@ -5,7 +5,7 @@ import requests
 st.set_page_config(page_title="HandyFinder", page_icon="🛠️")
 
 # 2. Add your Yelp API Key here (or use Streamlit Secrets)
-st.secrets["YELP_API_KEY"]
+YELP_API_KEY = "V5xwpciVJjuDJaEf0oXHIYkrV6b3wSMTYcxGz1F9Yf_LdPrjKbYSzBkRmoolJBYC7l2qCfiUNRSr4fgLRKDNZkPf1vy6pC1kBHwQo8_B1JkFr1JR0WUENkHzXMfraXYx"
 
 def get_handymen(location):
     url = "https://api.yelp.com/v3/businesses/search"
